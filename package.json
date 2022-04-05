@@ -1,0 +1,16 @@
+{
+  "name": "netflix",
+  "version": "1.0.0",
+  "description": "netflix clone",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aenã Martinelli",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0",
+    "owl.carousel": "^2.3.4"
+  }
+}

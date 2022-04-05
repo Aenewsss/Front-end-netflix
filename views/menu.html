@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <script src="../javascript/bootstrap.js"></script>
+    <title>Nerdflix</title>
+    <link rel="shortcut icon" href="../public/icons/icons8-netflix-80.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../public/stylesheets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../public/stylesheets/owl.theme.default.min.css">
+    <script src="../javascript/jquery.min.js" defer></script>
+    <script src="../javascript/owl.carousel.min.js" defer></script>
+    <script src="../javascript/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
+            <div class="container-fluid">
+                <a href="menu.html" class="navbar-brand ms-3 "><img class="carousel-images" src="../public/images/icons8-netflix-96.png"
+                        alt="netflix logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-3 navbar-start">
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link active">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#series" class="nav-link">Séries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#filmes" class="nav-link">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Bombando</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Minha lista</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-3 navbar-end">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> <img src="../public/icons/icons8-pesquisar-24.svg"
+                                    alt="Pesquisar"> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><img width="24" src="../public/icons/icons8-sino-32.png"
+                                    alt="Sino"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="edit_profile" class="nav-link"><img width="36" src="../public/images/batman.png"
+                                    alt="Profile"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid no-pad">
+            <video id="video" src="../public/videos/flash_trailer.mp4" autoplay></video>
+            <div class="info">
+                <div class="title text-light">
+                    <img src="../public/icons/icons8-netflix-40.svg" alt="" width="20">
+                    <span class="align-middle">Filme</span>
+                    <br>
+                    <span class="description">Acompanhe as aventuras do homem mais veloz <br>
+                        do planeta, o cientista Barry Allen, que após <br>
+                        um trágico acidente adquire o poder da velocidade.
+                    </span>
+                    <br>
+                    <a href="show_movie" class="btn bg-light mt-3">
+                        <img src="../public/icons/play-icon.png" alt="">
+                        <span class="align-middle">Assistir</span>
+                    </a>
+                    <a href="show_movie" class="btn btn-secondary mt-3">
+                        <img src="../public/icons/info-icon.png" alt="">
+                        <span class="align-middle">Mais informações</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mute-audio">
+                <button id="mute-button" onclick="muteVideo()" class="btn"><img id="mute-button-image" width="40"
+                        src="../public/icons/sound-icon.png" alt=""></button>
+            </div>
+            <div class="info-responsive">
+                <div class="title text-light">
+                    <img src="../public/icons/icons8-netflix-40.svg" alt="" width="20">
+                    <span class="align-middle">Filme</span>
+                    <br>
+                    <span class="description">Acompanhe as aventuras do homem mais veloz <br>
+                        do planeta, o cientista Barry Allen, que após <br>
+                        um trágico acidente adquire o poder da velocidade.
+                    </span>
+                    <br>
+                    <a href="show_movie" class="btn bg-light mt-3">
+                        <img src="../public/icons/play-icon.png" alt="">
+                        <span class="align-middle">Assistir</span>
+                    </a>
+                    <a href="show_movie" class="btn btn-secondary mt-3">
+                        <img src="../public/icons/info-icon.png" alt="">
+                        <span class="align-middle">Mais informações</span>
+                    </a>
+                </div>
+            </div>
+            <div class="em-alta">
+                <h4 class="text-light">Em alta</h4>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="#" ><img class="carousel-images" src="../public/images/carousel-images/aquaman.jpg"  alt="aquaman"></a>
+                    </div>
+                    <div class="item">
+                        <a href="#" ><img class="carousel-images" src="../public/images/carousel-images/batman.jpg" alt="batman"> </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" ><img class="carousel-images" src="../public/images/carousel-images/cyborg.jpg" alt="cyborg"> </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" ><img class="carousel-images" src="../public/images/carousel-images/flash.jpg" alt="flash"> </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" ><img class="carousel-images" src="../public/images/carousel-images/justice-league.jpg" alt="justice-league"> </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/superman.jpg" alt="superman"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="movies text-light">
+        <div class="movie top10 mt-5">
+            <h4 class="text-light">Top 10</h4>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/cyborg.jpg" alt="cyborg"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/justice-league.jpg" alt="justice-league"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/aquaman.jpg" alt=""> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/batman.jpg" alt="batman"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/flash.jpg" alt="flash"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/superman.jpg" alt="superman"> </a>
+                </div>
+            </div>
+        </div>
+        <div class="movie series mt-5" id="series">
+            <h4 class="text-light">Séries</h4>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/superman.jpg" alt="superman"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/flash.jpg" alt="flash"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/cyborg.jpg" alt="cyborg"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/justice-league.jpg" alt="justice-league"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/aquaman.jpg" alt=""> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/batman.jpg" alt="batman"> </a>
+                </div>
+            </div>
+        </div>
+        <div class="movie filmes mt-5" id="filmes">
+            <h4 class="text-light">Filmes</h4>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/aquaman.jpg" alt=""> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/batman.jpg" alt="batman"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/cyborg.jpg" alt="cyborg"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/flash.jpg" alt="flash"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/justice-league.jpg" alt="justice-league"> </a>
+                </div>
+                <div class="item">
+                    <a href="#" > <img class="carousel-images" src="../public/images/carousel-images/superman.jpg" alt="superman"> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-light text-center">
+        <span> &COPY; Aenã Martinelli </span>
+        <br>
+        <br>
+        <a href="https://github.com/Aenewsss"> <img src="../public/icons/icons8-github-30.png" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/aen%C3%A3-eloi-martinelli/"><img src="../public/icons/icons8-linkedin-30.png" alt="Linkedin"></a>
+        <a href="http://aenewsss-resume.herokuapp.com/"><img width="25" src="../public/icons/icons8-lightning-32.png" alt="My website"></a>
+    </footer>
+</body>
+
+</html>

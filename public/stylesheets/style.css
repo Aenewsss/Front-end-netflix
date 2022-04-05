@@ -1,0 +1,186 @@
+@import 'bootstrap.css';
+
+:root{
+    --background-page: #141414;
+}
+
+body{ background-color: var(--background-page); }
+
+::-webkit-scrollbar{ display: none; }
+
+.navbar{ background-color: var(--background-page); }
+
+.navbar-start{ width: 50%; }
+
+.navbar-end{
+    width: 50%;
+    justify-content: end;
+}
+
+.menu{ margin-top: 100px; }
+
+.col-profile{
+    width: fit-content;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.card-hover{ color: gray; }
+
+.card-hover:hover{ color: white; }
+
+.card-default{
+    width: 100px;
+    border: none;
+    color: rgb(128, 128, 128);
+}
+
+.btn-profile{
+    border: 1px solid gray;
+    font-size: small;
+    color: gray;
+}
+
+.btn-profile:hover{
+    border-color: white;
+    color: white;
+}
+
+.movies{ margin-top: 140px; }
+
+.no-pad{ padding: 0; }
+
+video{ width: 100%; }
+
+.info{
+    position: absolute;
+    bottom: 25%;
+    left: 100px;
+}
+
+.info-responsive{
+    display: none;
+}
+
+.mute-audio{
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+}
+
+#mute-button:focus{ box-shadow: none; }
+
+.carousel-images{
+    width: 200px;
+    height: 120px;
+}
+
+.em-alta{ 
+    width: inherit;
+    position: absolute;
+    bottom: -25%;
+}
+
+.movies{ margin-top: 100px; }
+
+.movie{ width: 98%; margin: auto; }
+
+footer{
+    margin-top: 100px;
+    padding: 30px;
+}
+
+/* disposição dos filmes quandos o tamanho da tela é alterado */
+@media only screen and (max-width:1244px){
+    .movies{
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width:1070px){
+    .movies{
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (max-width:890px){
+    .movies{
+        margin-top: 400px;
+    }
+    .mute-audio{
+        top: 50%;
+    }
+}
+
+@media only screen and (max-width:742px){
+    .movies{
+        margin-top: 500px;
+    }
+    .mute-audio{
+        top: 25%;
+    }
+    .info{ display: none; }
+    .info-responsive{ display: unset; }
+}
+
+@media only screen and (max-width:580px){
+    .info{
+        display: none;   
+    }
+    .mute-audio{
+        top: 25%;
+    }
+    .em-alta{
+        top: 80%;
+    }
+    .movies{
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .info{
+        display: none;   
+    }
+    .mute-audio{
+        top: 20%;
+    }
+    .em-alta{
+        top: 50%;
+    }
+    .movies{
+        margin-top: 70%;
+    }
+}
+
+
+@media only screen and (max-width:390px){
+    .info{
+        display: none;   
+    }
+    .em-alta{
+        top: 50%;
+    }
+    .movies{
+        margin-top: 70%;
+    }
+}
+
+
+@media only screen and (max-width:375px){
+    .info{
+        display: none;   
+    }
+    .em-alta{
+        top: 70%;
+    }
+    .movies{
+        margin-top: 70%;
+    }
+}
+
+@media only screen and (min-width:1920px){
+    .em-alta{
+        top: 90%;
+    }
+}
