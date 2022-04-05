@@ -85,6 +85,12 @@ video{ width: 100%; }
 
 .movie{ width: 98%; margin: auto; }
 
+.pencil-edit{
+    position: absolute;
+    top: 30px;
+    left: 34px;
+}
+
 footer{
     margin-top: 100px;
     padding: 30px;
